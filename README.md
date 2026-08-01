@@ -6,6 +6,8 @@
 ![OpenAI SDK](https://img.shields.io/badge/OpenAI_SDK-412991?style=flat&logo=openai&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white)
 
+**[Live API](https://summarize-api-87y8.onrender.com)** — try it interactively at **[/docs](https://summarize-api-87y8.onrender.com/docs)**
+
 A small, focused REST API: send it text, get back a concise summary and a list of key points. Built as a standalone backend service — no frontend, no database. Interactive documentation (Swagger UI) is generated automatically by FastAPI, so the API is self-documenting out of the box.
 
 ## Endpoint
@@ -55,7 +57,7 @@ Interactive Swagger UI — try the API directly from your browser.
 ## Example
 
 ```bash
-curl -X POST https://your-deployment.onrender.com/api/summarize \
+curl -X POST https://summarize-api-87y8.onrender.com/api/summarize \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-key-if-set" \
   -d '{"text": "Long article text here...", "style": "bullet", "max_sentences": 4}'
